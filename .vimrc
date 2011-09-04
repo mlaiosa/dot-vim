@@ -1,7 +1,6 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-set background=light
 set guifont=Consolas:h13
 
 filetype on
@@ -36,9 +35,9 @@ au FileType text,svn,mail,xml call Prose()
 au FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
 syntax on
-" This mess makes solarized work better in Terminal.app
-if !has('gui_running') && $TERM_PROGRAM == 'Apple_Terminal'
-	let g:solarized_termcolors = &t_Co
-	let g:solarized_termtrans = 1
+if has('gui_running')
+	set background=light
+else
+	set background=dark
 endif
 colorscheme solarized
