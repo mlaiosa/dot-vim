@@ -4,6 +4,10 @@ call pathogen#helptags()
 set background=light
 set guifont=Consolas:h13
 
+filetype on
+filetype plugin on
+filetype indent on
+set cscopetag
 set visualbell
 set autoindent
 set incsearch
@@ -29,6 +33,7 @@ endfunction
 
 au FileType c set cindent
 au FileType text,svn,mail,xml call Prose()
+au FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
 syntax on
 " This mess makes solarized work better in Terminal.app
