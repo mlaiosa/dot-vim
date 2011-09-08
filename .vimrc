@@ -1,7 +1,11 @@
 call pathogen#infect()
 call pathogen#helptags()
 
-set guifont=Consolas:h13
+if has("gui_gtk2")
+	set guifont=Inconsolata\ Medium\ 13
+else
+	set guifont=Consolas:h13
+endif
 
 filetype on
 filetype plugin on
