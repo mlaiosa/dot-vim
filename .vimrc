@@ -15,6 +15,7 @@ set visualbell
 set autoindent
 set incsearch
 set smartcase
+set ignorecase
 set number
 set showmatch
 set ruler
@@ -24,6 +25,7 @@ set modeline
 set sw=4
 set ts=4
 set smarttab
+set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 
 function! Prose()
 	set spell
