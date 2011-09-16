@@ -37,7 +37,7 @@ function! Prose()
 endfunction
 
 au FileType c set cindent
-au FileType text,svn,mail,xml call Prose()
+au FileType gitcommit,text,svn,mail,xml call Prose()
 au FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
 
 syntax on
