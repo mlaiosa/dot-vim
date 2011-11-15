@@ -39,6 +39,7 @@ endfunction
 au FileType c set cindent
 au FileType gitcommit,text,svn,mail,xml call Prose()
 au FileType html,xml,xsl source ~/.vim/scripts/closetag.vim 
+au FileType make,cabal set et
 
 syntax on
 if has('gui_running')
