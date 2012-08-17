@@ -26,6 +26,8 @@ set sw=4
 set ts=4
 set smarttab
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
+set scrolloff=1
+set autoread
 
 function! Prose()
 	set spell
