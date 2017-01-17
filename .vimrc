@@ -28,6 +28,7 @@ set smarttab
 set listchars=eol:$,tab:>-,trail:.,extends:>,precedes:<
 set scrolloff=1
 set autoread
+set expandtab
 
 function! Prose()
 	set spell
